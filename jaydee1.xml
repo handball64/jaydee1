@@ -1,16 +1,15 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="335" y="97">
-    <next>
-      <block type="controls_repeat" id="2" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="3">
-            <field name="NUM">250</field>
-          </block>
-        </value>
-        <next>
-          <block type="movement_stop" id="5"></block>
-        </next>
+  <block type="controls_repeat" id="2" inline="true" x="316" y="86">
+    <value name="TIMES">
+      <block type="math_number" id="3">
+        <field name="NUM">250</field>
       </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="1"></block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="5"></block>
     </next>
   </block>
 </xml>
